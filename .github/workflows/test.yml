@@ -1,0 +1,10 @@
+name: Dependabot Actions Ignore Versions Test
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
